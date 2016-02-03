@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="4be52aab-6ed9-4973-93ee-637003a633df" />
+          <unit-entry name="sessionFactory" value="4be52aab-6ed9-4973-93ee-637003a633df" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="Spring-4.2.4.RELEASE" type="spring">
+        <properties version="4.2.4.RELEASE" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/spring-aspects-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-aop-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-beans-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-context-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-context-support-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-instrument-tomcat-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-jdbc-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-instrument-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-expression-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-messaging-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-core-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-orm-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-jms-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-tx-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/commons-logging-1.1.31.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/aopalliance-1.01.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-test-4.2.4.RELEASE1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/spring-oxm-4.2.4.RELEASE1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="Spring MVC-4.2.4.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Spring Data JPA-1.3.3" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library name="Hibernate 4.2.2-4.2.2" type="hibernate">
+        <properties version="4.2.2" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/antlr-2.7.71.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/hibernate-commons-annotations-4.0.2.Final1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/dom4j-1.6.11.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jboss-transaction-api_1.1_spec-1.0.1.Final1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jboss-logging-3.1.0.GA1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javassist-3.15.0-GA1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/hibernate-core-4.2.2.Final1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="repository">
+        <properties maven-id="mysql:mysql-connector-java:5.1.37" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.37.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="repository">
+        <properties maven-id="org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.0.Final" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="repository">
+        <properties maven-id="javax.servlet:javax.servlet-api:3.1.0" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/javax.servlet-api-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jstl-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="repository">
+        <properties maven-id="javax.validation:validation-api:1.1.0.Final" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/validation-api-1.1.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="org.hibernate:hibernate-validator:4.2.0.Final" type="repository">
+        <properties maven-id="org.hibernate:hibernate-validator:4.2.0.Final" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/hibernate-validator-4.2.0.Final.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/validation-api-1.0.0.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/slf4j-api-1.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jaxb-api-2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jaxb-impl-2.1.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:4.2.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
+  </component>
+</module>
