@@ -74,15 +74,7 @@ public class ChoseOptionController {
 
         return "contactOperation";
     }
-   /* @RequestMapping(value = "/chooseOption/contactOperation/addContact", method = RequestMethod.POST)
-    private String saveContact(@Valid @ModelAttribute("contactEdit") Contact contactEdit,
-                               BindingResult result, ModelMap model){
-        if(result.hasErrors()){
-            return "redirect:/chooseOption/contactOperation";
-        }
 
-        return "redirect:/chooseOption";
-    }*/
     @RequestMapping(value = "/chooseOption/contactOperation/addContact", method = RequestMethod.POST)
     private String saveContact(Model model,HttpServletRequest request) {
         Contact contact = new Contact();
@@ -92,8 +84,6 @@ public class ChoseOptionController {
         contact.setSecondname(request.getParameter("secondname"));
         contact.setAddress(request.getParameter("address"));
         contact.setBirthday(Date.valueOf(request.getParameter("birthday")));
-        System.out.println(request.getParameter("birthday")+"        JSP DATE");
-        System.out.println(Date.valueOf(request.getParameter("birthday"))+"        Java DATE");
         Set<Email> emails = new HashSet<Email>(0);
         Set<Phone> phones = new HashSet<Phone>(0);
         System.out.println("        JSP MOBILE"+request.getParameter("mobile")+"        JSP MOBILE");
@@ -102,7 +92,7 @@ public class ChoseOptionController {
         phones.add(new Phone(contact, request.getParameter("workPhone"),"Work"));
         contact.setPhones(phones);
         emails.add(new Email(contact, "Home", request.getParameter("homeEmail")));
-        emails.add(new Email(contact, "Home", request.getParameter("workEmail")));
+        emails.add(new Email(contact, "Work", request.getParameter("workEmail")));
         contact.setEmails(emails);
         //phone.setKind(request.getParameter("typePhone"));
         // phone.setPhone(request.getParameter("phone"));
@@ -115,8 +105,8 @@ public class ChoseOptionController {
         //phoneService.addPhone(phone);
         return "redirect:/chooseOption";
     }
-    @SuppressWarnings("unchecked")
-    @RequestMapping(value = "/chooseOption/contactOperation/saveChanges{contactId}")
+
+   /* @RequestMapping(value = "/chooseOption/contactOperation/saveChanges{contactId}" ,method = RequestMethod.POST)
     private String saveChanges(@PathVariable("contactId") Integer id, HttpServletRequest request,Model model) {
         Contact contact = new Contact();
         contact.setContactId(id);
@@ -145,7 +135,7 @@ public class ChoseOptionController {
         emailService.saveChanges(new Email(homeE,contact,"Home",request.getParameter("Home")));
         emailService.saveChanges(new Email(workE,contact,"Work", request.getParameter("Work")));
         contactService.saveChanges(contact);
-        return "chooseOption";
-    }
+        return "redirect:/chooseOption";
+    }*/
 
 }

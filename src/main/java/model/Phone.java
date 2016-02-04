@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Entity
 public class Phone {
     private int phoneId;
-    @NotEmpty
+    @NotEmpty(message = "will be not empty")
     private String phone;
     private String kind;
 

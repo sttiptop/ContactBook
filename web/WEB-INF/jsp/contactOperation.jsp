@@ -21,36 +21,6 @@
     <link href="<%= request.getContextPath()%>/public/css/visualize.css" rel="stylesheet" type="text/css"
           media="screen"/>
 
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery.dimensions.min.js"></script>
-
-    <!-- // Tabs // -->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/ui.core.js"></script>
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery.ui.tabs.min.js"></script>
-
-    <!-- // Table drag and drop rows // -->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/tablednd.js"></script>
-
-    <!-- // Date Picker // -->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/ublic/js/date.js"></script>
-    <!--[if IE]>
-    <script type="text/javascript" src="public/js/jquery.bgiframe.js"></script><![endif]-->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery.datePicker.js"></script>
-
-    <!-- // Wysiwyg // -->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery.wysiwyg.js"></script>
-
-    <!-- // Graphs // -->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/excanvas.js"></script>
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery.visualize.js"></script>
-
-    <!-- // Fancybox // -->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery.fancybox-1.3.1.js"></script>
-
-    <!-- // File upload // -->
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/jquery.filestyle.js"></script>
-
-    <script type="text/javascript" src="<%= request.getContextPath()%>/public/js/init.js"></script>
 </head>
 <body>
 <div id="main">
@@ -68,41 +38,43 @@
             </ul>
         </div>
         <c:if test="${!empty contactEdit}">
-            <div class="box">
+
+                <div class="box">
                 <div class="headlines">
                     <h2><span>Edit Contact</span></h2>
                 </div>
-                <form class="formBox" action="saveChanges${contactEdit.contactId}.form" method="POST">
+                <form class="formBox" action="Edit${contactEdit.contactId}" method="POST">
                     <fieldset>
                         <div class="col1">
                             <div class="clearfix">
                                 <div class="lab"><label>Surname</label></div>
-                                <div class="con"><input type="text" name="surname" class="input"
-                                                        value="${contactEdit.surname}">
+                                <div class="con">
+                                    <input type="text" name="surname" class="input" value="${contactEdit.surname}">
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <div class="lab"><label>FirstName</label></div>
-                                <div class="con"><input type="text" name="firstname" class="input"
-                                                        value="${contactEdit.firstname}">
+                                <div class="con">
+                                    <input type="text" name="firstname" class="input" value="${contactEdit.firstname}">
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <div class="lab"><label>SecondName</label></div>
-                                <div class="con"><input type="text" name="secondname" class="input"
-                                                        value="${contactEdit.secondname}">
+                                <div class="con">
+                                    <input type="text" name="secondname" class="input"
+                                           value="${contactEdit.secondname}">
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <div class="lab"><label>Birthday</label></div>
-                                <div class="con"><input type="date" name="birthday" class="input"
-                                                        value="${contactEdit.birthday}">
+                                <div class="con">
+                                    <input type="date" name="birthday" class="input" value="${contactEdit.birthday}">
                                 </div>
                             </div>
                             <div class="clearfix">
                                 <div class="lab"><label>Address</label></div>
-                                <div class="con"><input type="text" name="address" class="input"
-                                                        value="${contactEdit.address}">
+                                <div class="con">
+                                    <input type="text" name="address" class="input" value="${contactEdit.address}">
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -111,14 +83,13 @@
                                     <table class="tab tab-drag">
                                         <c:forEach items="${setPhones}" var="phone">
                                             <tr>
-                                                <td><output name="${phone.kind}PhoneId" value="${phone.phoneId}"/></td>
-                                                <td><input id="kind" class="input" type="text" value="${phone.kind}"
-                                                           disabled>
+                                                <td>
+                                                    <input name="${phone.kind}PhoneId" value="${phone.phoneId}" readonly="">
                                                 </td>
-                                                <td><label for="kind"><input class="input" name="${phone.kind}"
-                                                                             type="text"
-                                                                             value="${phone.phone}"></label>
+                                                <td><input class="input" type="text" value="${phone.kind}" readonly="">
                                                 </td>
+                                                <td><input class="input" name="${phone.kind}" type="text"
+                                                           value="${phone.phone}"></td>
                                             </tr>
                                         </c:forEach>
                                     </table>
@@ -131,19 +102,20 @@
 
                                         <c:forEach items="${setEmails}" var="Email">
                                             <tr>
-                                                <td><output name="${Email.kind}EmailId" value="${Email.emailId}"/></td>
+                                                <td>
+                                                    <input name="${Email.kind}EmailId" value="${Email.emailId}" readonly="">
+                                                </td>
                                                 <td><label><input type="text" class="input" value="${Email.kind}"
                                                                   disabled></label></td>
                                                 <td><input type="text" class="input" name="${Email.kind}"
-                                                           value="${Email.email}">
-                                                </td>
+                                                           value="${Email.email}"></td>
                                             </tr>
                                         </c:forEach>
                                     </table>
                                 </div>
                             </div>
-                            <input type="submit" value="saveEdit"><br><br>
                         </div>
+                        <input type="submit" value="saveEdit">
                     </fieldset>
                 </form>
             </div>
@@ -165,7 +137,7 @@
                                 </div>
                                 <div class="clearfix">
                                     <div class="lab"><label>firstName</label></div>
-                                    <div class="con"><input type="text" class="input" name="secondname"></div>
+                                    <div class="con"><input type="text" class="input" name="firstname"></div>
                                 </div>
                                 <div class="clearfix">
                                     <div class="lab"><label>secondName</label></div>

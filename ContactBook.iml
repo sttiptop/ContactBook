@@ -150,6 +150,11 @@
           <root url="jar://$MODULE_DIR$/lib/slf4j-api-1.6.1.jar!/" />
           <root url="jar://$MODULE_DIR$/lib/jaxb-api-2.2.jar!/" />
           <root url="jar://$MODULE_DIR$/lib/jaxb-impl-2.1.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/hibernate-validator-4.2.0.Final.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/validation-api-1.0.0.GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/slf4j-api-1.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jaxb-api-2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jaxb-impl-2.1.12.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

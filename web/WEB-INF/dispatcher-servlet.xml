@@ -12,7 +12,7 @@
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
     <mvc:resources location="classpath:public/" mapping="/public/**"/>
-    <mvc:resources location="classpath:public/" mapping="*/public/**"/>
+    <mvc:resources location="classpath:public/" mapping="**/public/**"/>
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 
         <beans:property name="prefix" value="/WEB-INF/jsp/"/>

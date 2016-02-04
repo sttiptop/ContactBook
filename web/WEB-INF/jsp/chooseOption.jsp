@@ -95,5 +95,6 @@
             <a href="chooseOption/contactOperation">add new Contact</a>
         </div>
     </div>
+</div>
 </body>
 </html>
