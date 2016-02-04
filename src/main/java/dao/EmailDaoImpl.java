@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Yevgeni on 01.02.2016.
@@ -23,7 +22,7 @@ public class EmailDaoImpl implements EmailDao {
         sessionFactory.getCurrentSession().update(email);
     }
 
-    public void deleteEmail(Email email) {
+    public void deleteEmail(Email email){
 
     }
 

@@ -22,6 +22,7 @@ public class ContactDaoImpl implements ContactDao {
 
     public List<Contact> getAllContact() {
         return sessionFactory.getCurrentSession().createQuery("from Contact ").list();
+
     }
 
 
