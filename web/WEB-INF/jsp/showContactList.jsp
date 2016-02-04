@@ -65,7 +65,7 @@
     <div id="content">
         <div class="breadcrumbs">
             <ul>
-                <li class="home"><a href="backToAdmin">Назад</a></li>
+                <li class="home"><a href="index">Назад</a></li>
             </ul>
         </div>
         <div class="box">
