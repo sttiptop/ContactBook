@@ -3,6 +3,7 @@
     <properties maven-id="javax.validation:validation-api:1.1.0.Final" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
