@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="60da0996-b40d-432c-97da-60444c4f7b6b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-password>dfc0dfcedfc8dfc9df90dfc7dfd3dfd9dfdbdfc6df90df85df85dfc6dfc5dfc9dfcbdfc6dfc2dfc5dfd9dfdedf90df99df99df9adf9cdf85dfc9dfc5dfc4dfdedfcbdfc9dfdedfc8dfc5dfc5dfc1df95dfdfdfd9dfcfdfffdfc4dfc3dfc9dfc5dfcedfcfdf97dfdedfd8dfdfdfcfdf8cdfc9dfc2dfcbdfd8dfcbdfc9dfdedfcfdfd8dfefdfc4dfc9dfc5dfcedfc3dfc4dfcddf97dfffdffedfecdf87df92df8cdfc9dfc2dfcbdfd8dfcbdfc9dfdedfcfdfd8dff9dfcfdfdedff8dfcfdfd9dfdfdfc6dfdedfd9df97dfffdffedfecdf87df92</user-password>
+    </data-source>
+    <data-source name="dataSource" uuid="c54cb202-1d88-471c-bcfe-559a38c2de91">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+    </data-source>
+  </component>
+</project>
