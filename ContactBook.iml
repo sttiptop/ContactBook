@@ -196,5 +196,6 @@
     <orderEntry type="library" name="org.hibernate:hibernate-validator:5.3.4.Final" level="project" />
     <orderEntry type="library" name="org.springframework:spring-beans:4.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="org.springframework:spring-aop:4.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="mysql:mysql-connector-java:6.0.5" level="project" />
   </component>
 </module>
